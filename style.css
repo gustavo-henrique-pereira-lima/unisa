@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+*{
+    /*margin: 0 auto;*/
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mate;
+    font-family: 'Mate SC', serif;  
+}
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+body{
+    background-image: linear-gradient(#878787 , #D6D6D6 50%);
+    background-repeat: no-repeat;
+    background-color: #D6D6D6;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*-----------------------------------menu do site---------------------------------------------------------------------------*/
+header{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    /*grid-template-columns: 0.5fr 2fr;*/
+    text-align: center;
+}
+.circulo{
+    width: 320px;
+    height: 250px;
+    /*margin-top: -250px;*/
+    /*margin-left: -200px;*/
+    background-color: #FFC700;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px;
+}
+#menu{
+    width: 100%; 
+}
+#menu-h{
+    box-shadow: 3px 3px 7px #535353;
+}
+            #menu-h ul{
+                padding: 1px; 
+                background-image: linear-gradient(#FFC700 50%, #fadc72);   
+            }
+            #menu-h ul li{
+                display: inline;    
+            }
+            #menu-h ul li a{
+                text-decoration: none;
+                padding: 10px;
+                display: inline-block;
+            }
+            #menu-h ul li a:hover {
+                opacity: 30%;
+            }
+
+#menu2{
+    margin-top: 20px;
+    height: 44px;
+}
+            #menu2 ul{
+                list-style: none;
+                padding: 1px;
+                background-image: linear-gradient(#FFC700 50%, #fadc72); 
+                float: right;
+                box-shadow: -1px 5px 10px #535353;        
+            }
+            #menu2 ul li{
+                display: inline;      
+            }
+            #menu2 ul li a{
+                text-decoration: none;
+                padding: 10px;
+                display: inline-block;
+            }
+            #menu2 ul li a:hover {
+                opacity: 30%;
+            }
+
+@media(max-width: 950px){
+    header{
+        flex-direction: column;
+    }
+    .circulo{
+        width: 0;
+        height: 0;
+    }
+    .rodape a{
+        font-size: 30px
+    };   
+}
+
+/*------------------------------------------ anuncio de "desconto"-----------------------------------------------------------*/
+.grid{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.um{
+    font-size: 30px;
+}
+.simbol{
+    padding: 10px;
+}
+.dois{
+    font-size: 60px;
+}
+@media(max-width: 950px){
+    .grid{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+/*---------------------------------------imagem estudante, barra de pesquisa + blocos---------------------------------------------*/
+.sessaoDois{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+    .bloco1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        gap: 10px;
+        width: 100%;
+    }
+        .blocoSessaoDois{ 
+            text-align: center;
+            /*background-color: aquamarine;*/
+            box-shadow: 2px 2px 5px #535353;
+            padding: 10px;
+        }
+    .bloco2{
+        padding-right: 10px;
+    }
+    #estudante{
+        width: 850;
+        height: 400px;       
+        box-shadow: 2px 2px 5px #535353;
+        margin-top: 10px;
+    }
+    #amarelo{
+        background-color: #FFC700;
+    }
+    #cinza{
+        background-color: #9e9e9e;
+    }
+
+@media(max-width: 950px){
+    .sessaoDois{
+        flex-direction: column;
+    }
+    .bloco2{
+        padding: 10px;
+    }
+    #estudante{
+        width: 100%; /* width of container */
+        height: 300px; /* height of container */
+        /*object-fit: cover;
+        object-position: 20% 10%; /* try 20px 10px */  
+    }
+}
+/*----------------------------------------------------ouvidoria - prouni - fies------------------------------------------------------*/
+.sessaoTres{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+    .caixaTres {
+        width: 400px;
+        height: 100%;
+        background-color: white;
+        box-shadow: 2px 2px 5px #535353;
+    }
+    .caixasteste{
+        margin-top: 0px;
+        text-align: center;
+        padding: 50px;
+    }
+    .caixasteste img:hover{
+        opacity: 50%;
+        
+    }
+@media(max-width: 950px){
+    .sessaoTres{
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 0;
+    }
+    .caixaTres{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+/*---------------------------------------------------rodapé-----------------------------------------------------*/
+footer{
+    width: 100%;
+    min-height: 250px;
+    background-color: #FFC700;
+    display: flex;
+    margin-top: 50px;
+    box-shadow: 0px 0px 5px #535353;
+}
+footer .rodape{
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+.rodape ul li a:hover{
+    color: #fff;
+}
+@media(max-width: 950px){
+    footer{
+        flex-direction: column;
+    }
+    footer .rodape{
+        width: 100%;
+        text-align: center;
+    }
+}
